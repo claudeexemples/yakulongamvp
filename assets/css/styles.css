@@ -1,0 +1,68 @@
+:root {
+    --primary: #16645F;
+    --secondary: #7FAAC8;
+    --accent: #BFD202;
+    --background: #EEECDE;
+}
+
+.bg-yakulonga {
+    background-color: var(--background);
+}
+
+.navbar {
+    background-color: var(--primary) !important;
+}
+
+.canvas-area {
+    width: 100%;
+    min-height: 80vh;
+    border: 2px dashed var(--secondary);
+    background-color: white;
+    padding: 20px;
+}
+
+.toolbox {
+    padding: 10px;
+}
+
+.draggable {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 4px;
+    cursor: grab;
+    user-select: none;
+}
+
+.draggable:hover {
+    opacity: 0.9;
+}
+
+.element {
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+
+.element:hover {
+    outline: 2px solid var(--accent);
+}
+
+.element-controls {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 12px;
+}
